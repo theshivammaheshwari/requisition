@@ -20,7 +20,7 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/rform/',
+  base: '/requisition/',
   optimizeDeps: {
     exclude: ['lucide-react'],
   },

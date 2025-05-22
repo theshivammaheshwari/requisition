@@ -104,7 +104,7 @@ const RequisitionForm: React.FC = () => {
           <CardHeader className="border-b py-2 flex flex-row justify-between items-center flex-wrap gap-2">
             <div className="flex items-center gap-2">
               <img 
-                src="https://raw.githubusercontent.com/theshivammaheshwari/rform/main/LNMIIT.png" 
+                src="https://raw.githubusercontent.com/theshivammaheshwari/requisition/main/LNMIIT.png" 
                 alt="LNMIIT Logo" 
                 className="h-12 w-auto"
               />
