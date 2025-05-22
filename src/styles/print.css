@@ -1,0 +1,160 @@
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 8mm;
+  }
+  
+  body {
+    font-size: 11pt !important;
+    color: #000;
+    background: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Preserve layout and scaling */
+  .max-w-4xl {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Keep card dimensions proportional */
+  .card {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 4px !important;
+    border: 1px solid #e5e7eb !important;
+    box-shadow: none !important;
+    background-color: white !important;
+  }
+
+  /* Maintain input field dimensions */
+  input, select, textarea {
+    border: 1px solid #000 !important;
+    padding: 2px 4px !important;
+    font-size: 11pt !important;
+    height: 28px !important;
+    min-height: 28px !important;
+    background-color: white !important;
+    margin: 2px 0 !important;
+  }
+
+  /* Keep table layout consistent */
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    page-break-inside: avoid !important;
+    font-size: 10pt !important;
+  }
+
+  tr, td, th {
+    page-break-inside: avoid !important;
+    padding: 4px !important;
+    font-size: inherit !important;
+  }
+
+  /* Maintain flex layouts */
+  .flex {
+    display: flex !important;
+  }
+
+  .grid {
+    display: grid !important;
+  }
+
+  /* Keep spacing consistent */
+  .p-1, .p-2, .p-4, .p-6 {
+    padding: 4px !important;
+  }
+
+  .gap-1, .gap-2, .gap-4 {
+    gap: 4px !important;
+  }
+
+  /* Ensure proper margins */
+  .mt-1, .mt-2, .mt-4,
+  .mb-1, .mb-2, .mb-4,
+  .my-1, .my-2, .my-4 {
+    margin: 4px 0 !important;
+  }
+
+  /* Hide print-specific elements */
+  .print-hidden,
+  button:not(.print-show) {
+    display: none !important;
+  }
+
+  /* Keep form layout intact */
+  .form-container {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  /* Maintain header styling */
+  .card-header {
+    padding: 8px !important;
+    border-bottom: 1px solid #e5e7eb !important;
+  }
+
+  /* Keep logo size consistent */
+  img {
+    height: 48px !important;
+    width: auto !important;
+  }
+
+  /* Ensure single page printing */
+  .min-h-screen {
+    min-height: 0 !important;
+  }
+
+  /* Remove unnecessary margins and padding */
+  .py-8, .px-4 {
+    padding: 0 !important;
+  }
+
+  /* Keep border styles */
+  .border-2 {
+    border-width: 1px !important;
+  }
+
+  /* Maintain text sizes */
+  .text-xs { font-size: 9pt !important; }
+  .text-sm { font-size: 10pt !important; }
+  .text-base { font-size: 11pt !important; }
+  .text-lg { font-size: 12pt !important; }
+  .text-xl { font-size: 14pt !important; }
+
+  /* Preserve background colors and borders */
+  .bg-gray-50 {
+    background-color: #f9fafb !important;
+  }
+
+  .border-black {
+    border-color: #000 !important;
+  }
+
+  /* Adjust specific components */
+  .committee-remarks {
+    min-height: 40px !important;
+  }
+
+  /* Maintain grid layouts */
+  .grid-cols-1 { grid-template-columns: 1fr !important; }
+  .grid-cols-2 { grid-template-columns: 1fr 1fr !important; }
+  .grid-cols-3 { grid-template-columns: 1fr 1fr 1fr !important; }
+  .grid-cols-4 { grid-template-columns: repeat(4, 1fr) !important; }
+
+  /* Keep form elements aligned */
+  .items-center {
+    align-items: center !important;
+  }
+
+  .justify-between {
+    justify-content: space-between !important;
+  }
+}

@@ -1,0 +1,132 @@
+@media print {
+  @page {
+    margin: 0.5cm;
+    size: portrait;
+  }
+
+  body {
+    font-size: 9pt;
+    line-height: 1.1;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+
+  .print\:p-0 {
+    padding: 0 !important;
+  }
+
+  .print\:border-0 {
+    border: 0 !important;
+  }
+
+  .print\:shadow-none {
+    box-shadow: none !important;
+  }
+
+  .print\:space-y-2 > * + * {
+    margin-top: 0.5rem !important;
+  }
+
+  button, .no-print {
+    display: none !important;
+  }
+
+  input, textarea, select {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0.1rem !important;
+    min-height: 1.5rem !important;
+    height: auto !important;
+  }
+
+  table {
+    page-break-inside: avoid;
+    font-size: 8pt;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+
+  .card-content {
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+  }
+
+  .space-y-6, .space-y-4, .space-y-2, .space-y-0\.5 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .space-y-6 > * + *, .space-y-4 > * + *, .space-y-2 > * + *, .space-y-0\.5 > * + * {
+    margin-top: 0.1rem !important;
+  }
+
+  textarea {
+    height: 1.5rem !important;
+  }
+
+  .bg-gray-50 {
+    background-color: #f9fafb !important;
+  }
+
+  .border-dashed {
+    border-style: dashed !important;
+  }
+
+  [data-sidebar="menu-button"] {
+    min-height: 2rem !important;
+  }
+
+  .committee-remarks {
+    min-height: 2rem !important;
+  }
+
+  .h-8 {
+    height: 1.75rem !important;
+  }
+
+  .h-12 {
+    height: 2rem !important;
+  }
+
+  .py-2 {
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+  }
+
+  .pt-1 {
+    padding-top: 0.1rem !important;
+  }
+
+  .p-1\.5 {
+    padding: 0.25rem !important;
+  }
+
+  .grid {
+    display: grid !important;
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  @media (min-width: 768px) {
+    .md\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+  }
+
+  .gap-1 {
+    gap: 0.25rem !important;
+  }
+
+  .gap-2 {
+    gap: 0.5rem !important;
+  }
+}
