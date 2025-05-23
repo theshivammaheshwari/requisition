@@ -21,7 +21,7 @@ const departments = [
   "Sports",
   "Medical",
   "IT",
-  "Maintenance"
+  "Maintenance",
   "Finance",
   "Others"
 ];
