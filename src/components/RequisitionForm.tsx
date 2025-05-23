@@ -17,6 +17,11 @@ const departments = [
   "Mathematics",
   "Humanities and Social Sciences",
   "Registrar",
+  "Admission",
+  "Sports",
+  "Medical",
+  "IT",
+  "Maintenance"
   "Finance",
   "Others"
 ];
